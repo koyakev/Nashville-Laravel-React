@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+.body {
+    @apply p-4 rounded-md;
+}
+
+.header {
+    @apply font-bold text-2xl text-red-900;
+}
+
+.header-2 {
+    @apply font-bold text-lg my-2;
+}
+
+.link {
+    @apply p-4 my-6 bg-red-900 text-white rounded-lg shadow-md flex flex-col;
+}
+
+.song-title {
+    @apply font-bold text-lg;
+}
+
+.song-artist {
+    @apply italic text-sm;
+}
+
+.button {
+    @apply p-2 w-15 shadow-md m-2 rounded flex justify-center;
+}
+
+.section-verse {
+    @apply p-3 my-2 border border-red-200 rounded-lg shadow;
+}
+
+.section-chorus {
+    @apply p-3 my-2 border-red-200 bg-red-900 text-white rounded-lg shadow;
+}
+
+.section-prechorus {
+    @apply p-3 my-2 border-red-200 bg-yellow-200 text-black rounded-lg shadow;
+}
+
+.section-bridge {
+    @apply p-3 my-2 border-red-200 bg-red-200 rounded-lg shadow;
+}
+
+.navbar {
+    @apply flex fixed bg-white top-0 left-0 w-full shadow-md justify-evenly items-center;
+}
+
+.nav-link {
+    @apply flex flex-col p-2 my-2 bg-green-900 text-white rounded;
+}
+
+.chord {
+    @apply mr-20 font-bold italic;
+}
