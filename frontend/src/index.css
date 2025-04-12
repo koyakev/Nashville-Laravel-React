@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
+body {
+    @apply bg-gray-900 text-white;
+}
+
 .body {
     @apply p-4 rounded-md;
 }
 
 .header {
-    @apply font-bold text-2xl text-red-900;
+    @apply font-bold text-2xl;
 }
 
 .header-2 {
@@ -13,7 +17,7 @@
 }
 
 .link {
-    @apply p-4 my-6 bg-red-900 text-white rounded-lg shadow-md flex flex-col;
+    @apply p-4 my-6 rounded-lg shadow-xs shadow-white flex flex-col;
 }
 
 .song-title {
@@ -25,33 +29,33 @@
 }
 
 .button {
-    @apply p-2 w-15 shadow-md m-2 rounded flex justify-center;
+    @apply p-1 w-25 shadow-md m-2 rounded flex justify-center bg-white text-black;
 }
 
-.section-verse {
-    @apply p-3 my-2 border border-red-200 rounded-lg shadow;
-}
-
-.section-chorus {
-    @apply p-3 my-2 border-red-200 bg-red-900 text-white rounded-lg shadow;
-}
-
-.section-prechorus {
-    @apply p-3 my-2 border-red-200 bg-yellow-200 text-black rounded-lg shadow;
-}
-
-.section-bridge {
-    @apply p-3 my-2 border-red-200 bg-red-200 rounded-lg shadow;
+.section {
+    @apply p-3 my-2 shadow-sm shadow-white rounded-lg shadow;
 }
 
 .navbar {
-    @apply flex fixed bg-white top-0 left-0 w-full shadow-md justify-evenly items-center;
+    @apply flex fixed bg-gray-900 top-0 left-0 w-full shadow-white shadow-sm justify-between items-center px-3;
 }
 
 .nav-link {
-    @apply flex flex-col p-2 my-2 bg-green-900 text-white rounded;
+    @apply flex flex-col p-3 px-5 text-lg m-2 text-white rounded-full text-center;
 }
 
 .chord {
     @apply mr-20 font-bold italic;
+}
+
+.search {
+    @apply bg-white my-3 w-full p-2 text-black rounded-full shadow shadow-sm shadow-white;
+}
+
+.form-label {
+    @apply my-1;
+}
+
+.form-field {
+    @apply w-full bg-white rounded-lg p-2 my-1 text-black;
 }

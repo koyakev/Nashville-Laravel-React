@@ -8,6 +8,10 @@ Route::get('/get_songs', [SongController::class, 'get_songs']);
 
 Route::get('/get_song/{id}', [SongController::class, 'get_song']);
 
+Route::get('/get_upcoming_sets', [SongController::class, 'upcoming_sets']);
+
+Route::get('/set/{id}', [SongController::class, 'set']);
+
 Route::get('/get_keys', [SongController::class, 'get_keys']);
 
 Route::get('/get_family/{id}', [SongController::class, 'get_family']);
