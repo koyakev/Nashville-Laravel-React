@@ -1,20 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
 function AddSong() {
     const [versesCount, setVersesCount] = useState(1)
-    const [verses, setVerses] = useState([]);
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        const formData = new FormData(e.ttarget)
-        const songData = Object.fromEntries(formData.entries())
 
-        // const song = {
-        //     title: data.title
-        // }
+        let verse = []
+        for(let i = 0; i < versesCount; i++) {
+            verse[`verse${i + 1}`] = e.target.elements[`verse${i + 1}`].value
+        }
 
-        console.log(songData.title)
+        console.log(verse)
     }
+
     return (
         <>
             <p className="header-2">Add Song</p>
