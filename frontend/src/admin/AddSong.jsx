@@ -6,7 +6,9 @@ function AddSong() {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        let verse = []
+        let info = []
+        info['title'] = e.target.elements['title'].value
+        info['artist'] = e.target.elements['artist'].value
         for(let i = 0; i < versesCount; i++) {
             verse[`verse${i + 1}`] = e.target.elements[`verse${i + 1}`].value
         }
